@@ -48,5 +48,6 @@ private:
         TreeNode * head = new TreeNode(vi[mid]);
         head->left = array2BST(vi, st, mid - 1);
         head->right = array2BST(vi, mid + 1, ed);
+        return head;
     }
 };
